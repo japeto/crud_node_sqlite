@@ -22,7 +22,13 @@ cd crud_node_sqlite
 npm install
 ```
 
-sqlite3 will be familiar to people using other relational database managers.
+3. Execute script on the command line
+
+```bash
+node connection.js
+```
+
+SQLite3 will be familiar to people using other relational database managers.
 
 In file  **connection.js**
 
@@ -100,12 +106,6 @@ db.run("DELETE FROM USER WHERE username = ? ",
 
 ```
 DELETE: Delete User table where username is lucas
-
-3. Execute script on the command line
-
-```bash
-node connection.js
-```
 
 # How to Contribute
 
