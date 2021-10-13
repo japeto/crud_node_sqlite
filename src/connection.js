@@ -13,8 +13,8 @@ db.run("CREATE TABLE IF NOT EXISTS PROJECT (name text, value int);");
 
 
 console.log("--- INSERT DATA ---");
-
-db.run("INSERT INTO USER (username, password) VALUES (?, ?)", ["jefferson", "1234"], (err)=>{
+db.run("INSERT INTO USER (username, password) VALUES (?, ?)", 
+                ["jefferson", "1234"], (err)=>{
     if(err){
         console.log(err.message);
     }
@@ -30,7 +30,6 @@ db.run("INSERT INTO PROJECT (name, value) VALUES (?, ?)", ["Investigacion 1", "9
 
 
 console.log("--- READ DATA ---");
-
 db.all("SELECT * from USER", (err, rows) => {
     if(err){
         console.log( err.message );
@@ -47,8 +46,8 @@ db.all("SELECT username from USER", (err, rows) => {
 
 
 console.log("--- UPDATE DATA ---");
-
-db.run("UPDATE USER set password = ? WHERE username = ? ", ["david123456", "david"] , (err) => {
+db.run("UPDATE USER set password = ? WHERE username = ? ", 
+        ["david123456", "david"] , (err) => {
     if(err){
         console.log( err.message );
     }
@@ -64,8 +63,8 @@ db.all("SELECT * from USER", (err, rows) => {
 });
 
 console.log("--- DELETE DATA ---");
-
-db.run("DELETE FROM USER WHERE username = ? ", ["lucas"], (err)=>{
+db.run("DELETE FROM USER WHERE username = ? ", 
+    ["lucas"], (err)=>{
     if(err){
         console.log(err.message);
     }
