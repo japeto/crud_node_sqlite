@@ -2,7 +2,7 @@
 
 A quick and easy code of how to hook up a single script and SQLite for basic CRUD interaction.
 
-# Spanish guidelines
+## Spanish guidelines
 
 The code is for [Mision TIC](https://www.upb.edu.co/es/mision-tic) and assist students to enable them. [Slides](https://docs.google.com/presentation/d/1uhbZE7V2Xh1s4zBZYdRrQPwBhw_-azcz/edit?usp=sharing&ouid=117208863573057933764&rtpof=true&sd=true)
 
@@ -27,6 +27,7 @@ npm install
 ```bash
 node connection.js
 ```
+## Scope of work
 
 SQLite3 will be familiar to people using other relational database managers.
 
